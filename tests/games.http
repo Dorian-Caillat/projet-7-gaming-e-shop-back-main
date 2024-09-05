@@ -1,0 +1,42 @@
+GET http://localhost:3000/game/
+
+###
+
+GET http://localhost:3000/game/plateform/switch
+
+###
+
+GET http://localhost:3000/game/jeux3
+
+###
+
+POST http://localhost:3000/game/
+Content-Type: application/json
+
+{
+    "slug":"random_game",
+    "name":"Random Game",
+    "description":"Ceci est une description random pour un jeu random",
+    "price":69.69,
+    "special_offer":10,
+    "physical_version":false,
+    "quantity":999999
+}
+
+### 
+
+DELETE http://localhost:3000/game/random_game
+
+###
+PUT http://localhost:3000/game/final_fantasy_16
+Content-Type: application/json
+
+{
+   "slug":"final_fantasy_16",
+   "name":"Final Fantasy XVI",
+   "description":"Jeu Action-RPG dans un univers fantastique et futuriste",
+   "price":69.99,
+   "special_offer":20,
+   "physical_version":true,
+   "quantity":50
+}

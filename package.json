@@ -1,0 +1,32 @@
+{
+  "name": "projet-7-gaming-e-shop-back",
+  "version": "1.0.0",
+  "description": "API pour le site Gaming eShop",
+  "main": "index.js",
+  "scripts": {
+    "devlin": "DEBUG=G-eShop:* npx nodemon",
+    "devWin": "set DEBUG=G-eShop:* && npx nodemon",
+    "start": "node index.js",
+    "seedDB": "psql -d ges -f data/seeding.sql"
+  },
+  "keywords": [],
+  "author": "Dorian C, Romain M",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}

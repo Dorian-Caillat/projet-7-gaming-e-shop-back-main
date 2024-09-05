@@ -1,0 +1,19 @@
+GET http://localhost:3000/purchase/
+
+###
+
+GET http://localhost:3000/purchase/1
+
+###
+
+POST http://localhost:3000/purchase/
+Content-Type: application/json
+
+{
+   "user_id":"1",
+   "total":"99.89",
+   "game_slug":[
+      "starfield",
+      "final_fantasy_16"
+   ]
+}
